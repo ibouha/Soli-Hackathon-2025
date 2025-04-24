@@ -1,0 +1,56 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "explore": "Explorer",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "logout": "Déconnexion",
+    "dashboard": "Tableau de bord"
+  },
+  "home": {
+    "hero": {
+      "title": "Vivez le Vrai Maroc pour la FIFA 2030",
+      "subtitle": "Connectez-vous avec les Marocains locaux pour découvrir des expériences culturelles authentiques pendant votre voyage de Coupe du Monde",
+      "searchTitle": "Trouvez votre expérience",
+      "wherePlaceholder": "Où allez-vous ?"
+    },
+    "experiences": {
+      "title": "Choisissez Votre Expérience Culturelle",
+      "subtitle": "Découvrez le Maroc à travers des expériences immersives menées par des locaux passionnés par le partage de leur culture",
+      "workshops": {
+        "title": "Ateliers Culturels",
+        "description": "Apprenez l'artisanat traditionnel marocain, la cuisine, la musique et plus encore avec des artisans et des experts locaux",
+        "cta": "Explorer les Ateliers"
+      },
+      "tours": {
+        "title": "Visites Guidées",
+        "description": "Explorez des joyaux cachés avec des guides locaux qui connaissent leurs villes et villages comme personne",
+        "cta": "Découvrir les Visites"
+      },
+      "homestays": {
+        "title": "Séjours chez l'Habitant",
+        "description": "Vivez avec une famille marocaine pour une expérience culturelle vraiment immersive au-delà de l'hébergement typique",
+        "cta": "Trouver un Hébergement"
+      }
+    },
+    "featured": {
+      "title": "Expériences en Vedette",
+      "subtitle": "Expériences culturelles sélectionnées pour votre visite au Maroc",
+      "viewAll": "Voir toutes les expériences"
+    },
+    "destinations": {
+      "title": "Meilleures Destinations au Maroc",
+      "subtitle": "Explorez des expériences culturelles distinctives dans les plus belles villes du Maroc"
+    },
+    "testimonials": {
+      "title": "Ce que Disent Nos Utilisateurs",
+      "subtitle": "Écoutez les touristes et les prestataires de services parler de leurs expériences NIYA 2030"
+    },
+    "cta": {
+      "title": "Prêt à Découvrir le Maroc ?",
+      "subtitle": "Rejoignez NIYA 2030 et connectez-vous avec des expériences culturelles marocaines authentiques pour la Coupe du Monde FIFA 2030",
+      "register": "S'inscrire Maintenant",
+      "explore": "Explorer les Expériences"
+    }
+  }
+}

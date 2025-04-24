@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Menu, X, Globe, User } from 'lucide-react';
+import { Menu, X, User } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../context/AuthContext';
+import LanguageSelector from '../common/LanguageSelector';
+import logo from "../../public/images/logo.png" ;
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { user, logout, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,14 +35,12 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md py-1"
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <NavLink to="/" className="text-2xl font-bold text-primary-600">
-            NIYA <span className="text-amber-500">2030</span>
+          <NavLink to="/" className="">
+            <img src={logo} alt="niya" className='w-20 h-20' />
           </NavLink>
         </div>
 
@@ -55,7 +58,7 @@ const Header: React.FC = () => {
               }`
             }
           >
-            Explore
+            {t('common.explore')}
           </NavLink>
 
           {isAuthenticated && user?.role === 'provider' && (
@@ -71,7 +74,7 @@ const Header: React.FC = () => {
                 }`
               }
             >
-              My Experiences
+              {t('common.myExperiences')}
             </NavLink>
           )}
 
@@ -88,7 +91,7 @@ const Header: React.FC = () => {
                 }`
               }
             >
-              Dashboard
+              {t('common.dashboard')}
             </NavLink>
           )}
 
@@ -112,7 +115,7 @@ const Header: React.FC = () => {
                   onClick={handleLogout}
                   className="px-4 py-2 rounded-md bg-primary-50 text-primary-600 hover:bg-primary-100 transition-colors"
                 >
-                  Logout
+                  {t('common.logout')}
                 </button>
               </div>
             ) : (
@@ -121,19 +124,17 @@ const Header: React.FC = () => {
                   to="/login"
                   className="px-4 py-2 rounded-md text-primary-600 hover:bg-primary-50 transition-colors"
                 >
-                  Login
+                  {t('common.login')}
                 </NavLink>
                 <NavLink
                   to="/register"
                   className="px-4 py-2 rounded-md bg-primary-600 text-white hover:bg-primary-700 transition-colors"
                 >
-                  Register
+                  {t('common.register')}
                 </NavLink>
               </div>
             )}
-            <button className="ml-2 text-gray-700">
-              <Globe size={20} />
-            </button>
+            <LanguageSelector />
           </div>
         </nav>
 
@@ -159,7 +160,7 @@ const Header: React.FC = () => {
               }
               onClick={() => setIsMenuOpen(false)}
             >
-              Explore
+              {t('common.explore')}
             </NavLink>
 
             {isAuthenticated && user?.role === 'provider' && (
@@ -172,7 +173,7 @@ const Header: React.FC = () => {
                 }
                 onClick={() => setIsMenuOpen(false)}
               >
-                My Experiences
+                {t('common.myExperiences')}
               </NavLink>
             )}
 
@@ -186,7 +187,7 @@ const Header: React.FC = () => {
                 }
                 onClick={() => setIsMenuOpen(false)}
               >
-                Dashboard
+                {t('common.dashboard')}
               </NavLink>
             )}
 
@@ -214,7 +215,7 @@ const Header: React.FC = () => {
                   onClick={handleLogout}
                   className="w-full py-2 px-4 rounded-lg bg-primary-50 text-primary-600 text-left"
                 >
-                  Logout
+                  {t('common.logout')}
                 </button>
               </>
             ) : (
@@ -224,17 +225,20 @@ const Header: React.FC = () => {
                   className="block py-2 px-4 rounded-lg text-gray-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Login
+                  {t('common.login')}
                 </NavLink>
                 <NavLink
                   to="/register"
                   className="block py-2 px-4 rounded-lg bg-primary-600 text-white"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Register
+                  {t('common.register')}
                 </NavLink>
               </>
             )}
+            <div className="py-2 px-4">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       )}

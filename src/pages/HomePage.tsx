@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, MapPin, Calendar, User, ChevronRight, Star } from 'lucide-react';
-import heroImage from "../public/images/heroImage.jpg" ;
 import Button from '../components/common/Button';
 import ExperienceCard from '../components/common/ExperienceCard';
 import { useExperiences } from '../context/ExperienceContext';
+import heroImage from "../public/images/heroImage.jpg";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col mt-20">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 flex items-center">
         <div className="absolute inset-0 overflow-hidden">
@@ -50,15 +50,42 @@ const HomePage: React.FC = () => {
                       <MapPin size={18} className="text-gray-500" />
                     </div>
                     <select
-                      className="block w-full pl-10 pr-3 py-3 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 rounded-lg"
-                      defaultValue=""
-                    >
-                      <option value="" disabled>Where are you going?</option>
-                      <option value="marrakech">Marrakech</option>
-                      <option value="fes">Fes</option>
-                      <option value="chefchaouen">Chefchaouen</option>
-                      <option value="casablanca">Casablanca</option>
-                    </select>
+  className="block w-full pl-10 pr-3 py-3 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 rounded-lg"
+  defaultValue=""
+>
+  <option value="" disabled>Where are you going?</option>
+  <option value="agadir">Agadir</option>
+  <option value="asilah">Asilah</option>
+  <option value="azilal">Azilal</option>
+  <option value="beni-mellal">Beni Mellal</option>
+  <option value="casablanca">Casablanca</option>
+  <option value="chefchaouen">Chefchaouen</option>
+  <option value="el-jadida">El Jadida</option>
+  <option value="essaouira">Essaouira</option>
+  <option value="fes">Fes</option>
+  <option value="ifrane">Ifrane</option>
+  <option value="kenitra">Kenitra</option>
+  <option value="khemisset">Khemisset</option>
+  <option value="khenifra">Khenifra</option>
+  <option value="larache">Larache</option>
+  <option value="marrakech">Marrakech</option>
+  <option value="meknes">Meknes</option>
+  <option value="merzouga">Merzouga</option>
+  <option value="nador">Nador</option>
+  <option value="ouarzazate">Ouarzazate</option>
+  <option value="oujda">Oujda</option>
+  <option value="rabat">Rabat</option>
+  <option value="safi">Safi</option>
+  <option value="sale">Salé</option>
+  <option value="sidi-ifni">Sidi Ifni</option>
+  <option value="tangier">Tangier</option>
+  <option value="taroudant">Taroudant</option>
+  <option value="taza">Taza</option>
+  <option value="tinghir">Tinghir</option>
+  <option value="tetouan">Tetouan</option>
+  <option value="zagora">Zagora</option>
+</select>
+
                   </div>
                 </div>
                 <div className="flex-1">

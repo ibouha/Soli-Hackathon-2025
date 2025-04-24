@@ -26,6 +26,10 @@ export interface ServiceProvider extends User {
   experiences: Experience[];
 }
 
+export interface Admin extends User {
+  role: 'admin';
+}
+
 export type ExperienceType = 'workshop' | 'tour' | 'homestay';
 
 export interface Experience {

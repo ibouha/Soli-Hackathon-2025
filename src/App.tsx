@@ -10,6 +10,7 @@ import ExperienceDetailPage from './pages/ExperienceDetailPage';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/dashboard/DashboardPage';
+import AdminDashboard from './pages/admin/AdminDashboard';
 import CreateExperiencePage from './pages/provider/CreateExperiencePage';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/provider/create-experience" element={<CreateExperiencePage />} />
               </Routes>
             </main>

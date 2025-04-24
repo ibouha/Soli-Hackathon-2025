@@ -1,0 +1,56 @@
+{
+  "common": {
+    "search": "Search",
+    "explore": "Explore",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "hero": {
+      "title": "Experience the Real Morocco for FIFA 2030",
+      "subtitle": "Connect with local Moroccans to discover authentic cultural experiences during your World Cup journey",
+      "searchTitle": "Find your experience",
+      "wherePlaceholder": "Where are you going?"
+    },
+    "experiences": {
+      "title": "Choose Your Cultural Experience",
+      "subtitle": "Discover Morocco through immersive experiences led by locals who are passionate about sharing their culture",
+      "workshops": {
+        "title": "Cultural Workshops",
+        "description": "Learn traditional Moroccan crafts, cooking, music, and more with local artisans and experts",
+        "cta": "Explore Workshops"
+      },
+      "tours": {
+        "title": "Guided Tours",
+        "description": "Explore hidden gems with local guides who know their cities and villages like no one else",
+        "cta": "Discover Tours"
+      },
+      "homestays": {
+        "title": "HomeStays",
+        "description": "Live with a Moroccan family for a truly immersive cultural experience beyond typical accommodation",
+        "cta": "Find HomeStays"
+      }
+    },
+    "featured": {
+      "title": "Featured Experiences",
+      "subtitle": "Handpicked cultural experiences for your visit to Morocco",
+      "viewAll": "View all experiences"
+    },
+    "destinations": {
+      "title": "Top Destinations in Morocco",
+      "subtitle": "Explore distinctive cultural experiences in Morocco's most beautiful cities"
+    },
+    "testimonials": {
+      "title": "What Our Users Say",
+      "subtitle": "Hear from tourists and service providers about their NIYA 2030 experiences"
+    },
+    "cta": {
+      "title": "Ready to Experience Morocco?",
+      "subtitle": "Join NIYA 2030 and connect with authentic Moroccan cultural experiences for the 2030 FIFA World Cup",
+      "register": "Register Now",
+      "explore": "Explore Experiences"
+    }
+  }
+}
