@@ -167,6 +167,7 @@ const CreateExperiencePage: React.FC = () => {
       setSuccess(true);
     } catch (err) {
       setError('Failed to create experience. Please try again.');
+      console.log(err);
     } finally {
       setIsLoading(false);
     }
@@ -533,7 +534,7 @@ const CreateExperiencePage: React.FC = () => {
                     <div></div>
                   )}
                   
-                  {step < 3 ? (
+                  {step <= 3 ? (
                     <Button
                       type="button"
                       variant="primary"

@@ -1,4 +1,7 @@
 import { Experience, Booking, Review } from '../types';
+import chefchounImage from "../public/images/image_fx (1).jpg"
+import HomeStayImage from "../public/images/image_fx (2).jpg";
+
 
 export const mockExperiences: Experience[] = [
   {
@@ -36,7 +39,6 @@ export const mockExperiences: Experience[] = [
     providerName: 'Fatima Zahra',
     location: 'Fes',
     images: [
-      'https://images.pexels.com/photos/4490461/pexels-photo-4490461.jpeg',
       'https://images.pexels.com/photos/4388167/pexels-photo-4388167.jpeg'
     ],
     languages: ['English', 'French', 'Arabic', 'Spanish'],
@@ -62,9 +64,8 @@ export const mockExperiences: Experience[] = [
     providerName: 'Hassan Imazighen',
     location: 'Atlas Mountains',
     images: [
-      'https://images.pexels.com/photos/13580548/pexels-photo-13580548.jpeg',
-      'https://images.pexels.com/photos/6146705/pexels-photo-6146705.jpeg'
-    ],
+      HomeStayImage,
+'https://images.pexels.com/photos/13580548/pexels-photo-13580548.jpeg'    ],
     languages: ['Berber', 'Arabic', 'English'],
     duration: 48,
     price: 800,
@@ -113,10 +114,7 @@ export const mockExperiences: Experience[] = [
     providerId: '6',
     providerName: 'Yasmine Alaoui',
     location: 'Chefchaouen',
-    images: [
-      'https://images.pexels.com/photos/4496553/pexels-photo-4496553.jpeg',
-      'https://images.pexels.com/photos/4343735/pexels-photo-4343735.jpeg'
-    ],
+    images: [chefchounImage],
     languages: ['English', 'French', 'Spanish'],
     duration: 4,
     price: 250,

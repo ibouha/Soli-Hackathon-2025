@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import logo from "../../public/images/logo.png" ;
+
 
 const Footer: React.FC = () => {
   return (
@@ -9,8 +11,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              NIYA <span className="text-amber-500">2030</span>
-            </h3>
+            <NavLink to="/" className="">
+            <img src={logo} alt="niya" className='w-28 h-28' />
+          </NavLink>            </h3>
             <p className="text-gray-300 mb-4">
               Connecting tourists with authentic Moroccan experiences for the 2030 FIFA World Cup.
             </p>

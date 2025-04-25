@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
 import { Check, X, AlertCircle } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
 import { useExperiences } from '../../context/ExperienceContext';
 import Button from '../../components/common/Button';
 
 const AdminDashboard: React.FC = () => {
-  const { user, isAuthenticated } = useAuth();
   const { experiences, updateExperience } = useExperiences();
   const [activeTab, setActiveTab] = useState<'pending' | 'approved'>('pending');
 
-  if (!isAuthenticated || !user || user.role !== 'admin') {
-    return <Navigate to="/login" />;
-  }
+
 
   const pendingExperiences = experiences.filter(exp => !exp.approved);
   const approvedExperiences = experiences.filter(exp => exp.approved);
